@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+
+    <title>廖哲偉 履歷</title>
+    <style>
+      .album .row a {
+        display: block;
+      }
+      .album .row p {
+        text-align: justify;
+      }
+      .album .row h5 {
+        text-align: center;
+        margin-bottom: 2rem;
+      }
+
+      @media screen and (min-width: 960px) {
+        .album .row:nth-child(odd) {
+          flex-direction: row-reverse;
+        }
+        .album .row:nth-child(odd) a {
+          text-align: right;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row w-75 mx-auto mt-5">
+        <h2>廖哲偉</h2>
+      </div>
+
+      <div class="row justify-content-around align-items-center mt-3">
+        <div class="border-top w-25"></div>
+        <h3>簡介</h3>
+        <div class="border-top w-25"></div>
+      </div>
+
+      <div class="row justify-content-around align-items-center">
+        <p class="col-8">
+          起初因為年少時的憧憬加上工作上的啟發，開始對程式設計感興趣，於是自學了一年的Python，期間自己嘗試了一些簡單的程式以及圖表與爬蟲，更解了將近四百題的Leetcode，對於演算法、爬蟲與多線程有基本的理解。但由於知曉到市場對網頁前後端的需求量是相對更高的，所以開始學習前後端網頁框架技術，包括Ruby
+          On Rails與Javascript等等，為市場需求做準備。
+        </p>
+      </div>
+
+      <div class="row justify-content-around align-items-center mt-3">
+        <div class="border-top w-25"></div>
+        <h3>
+          學經歷
+        </h3>
+        <div class="border-top w-25"></div>
+      </div>
+
+      <div class="row justify-content-center align-items-center">
+        <div class="col-9">
+          <ul>
+            <li>台灣師範大學工業教育系畢業</li>
+            <li>曾任英華威能源有限公司規劃部助理 1.5Y</li>
+            <li>曾任加耐力油封有限公司研發部工程師 1.5Y</li>
+            <li>曾任中華電信環南市場改建案繪圖工程師 3Y</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row justify-content-around align-items-center mt-3">
+        <div class="border-top w-25"></div>
+        <h3>
+          技能
+        </h3>
+        <div class="border-top w-25"></div>
+      </div>
+
+      <div class="row justify-content-center pt-3">
+        <div class="col-12 col-lg-3 d-flex flex-column align-items-center">
+          Programming Language
+          <span class="border w-50 mb-2"></span>
+          <div class="w-50">
+            <li>Ruby</li>
+            <li>Python</li>
+            <li>Javascript</li>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-3 d-flex flex-column align-items-center">
+          Front-end
+          <span class="border w-50 mb-2"></span>
+          <div class="w-50">
+            <li>Html/css</li>
+            <li>jQuery</li>
+            <li>Bootstrap</li>
+            <li>Axios</li>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-3 d-flex flex-column align-items-center">
+          Back-end
+          <span class="border w-50 mb-2"></span>
+          <div class="w-50">
+            <li>Rails</li>
+            <li>MySQL</li>
+            <li>Beautifulsoup</li>
+            <li>Nokogiri</li>
+            <li>Numpy</li>
+            <li>Pandas</li>
+            <li>Matplotlib</li>
+          </div>
+
+          <p></p>
+        </div>
+      </div>
+
+      <div class="row justify-content-around align-items-center mt-3">
+        <div class="border-top w-25"></div>
+        <h3>
+          作品
+        </h3>
+        <div class="border-top w-25"></div>
+      </div>
+      <div class="album w-75 m-auto">
+        <div class="row p-5 border-bottom">
+          <h5 class="col-12">小型聲量分析專案</h5>
+
+          <div class="col-12 col-lg-7">
+            <img class="w-100" src="./img/nltk-preview.png" alt="" />
+          </div>
+
+          <div class="col-12 col-lg-5">
+            <p>
+              當初初學爬蟲時，結合自己編寫的關鍵字提取演算法，配合TF-IDF演算法，達成非監督式學習的效果：爬取一段段的新聞，自動擷取關鍵字以及過濾垃圾訊息，結合文字權重計算以計算出討論聲量。
+            </p>
+            <p>
+              圖中圓點越大表示在該時段具有越高的討論度。該資料為2019年八到九月份時自新聞網上爬取，所以顯而易見熱衷討論的話題是總統大選。
+            </p>
+            <p>
+              除了政治分類外，尚有其他諸如娛樂、科技等等的分類標籤可供選擇（可複選），亦會顯現出該分類底下熱衷討論的話題是什麼。
+            </p>
+            <a href="https://kotens-nltk.herokuapp.com/">網頁連結</a>
+            <a href="https://github.com/koten0224/python_volume_analyse"
+              >Github</a
+            >
+          </div>
+        </div>
+
+        <div class="row p-5 border-bottom">
+          <h5 class="col-12">隨機生成圖片相簿</h5>
+
+          <div class="col-12 col-lg-7">
+            <img class="w-100" src="./img/album-preview.png" alt="" />
+          </div>
+
+          <div class="col-12 col-lg-5">
+            <p>
+              此為初學jQwery時結合Bootstrap
+              RWD做出的純前端CRUD互動靜態網頁。
+            </p>
+            <p>
+              按下隨機可隨機生成圖片，當然也可以在網址列貼上圖片網址，並按下貼上即可新增到圖片預覽區。如果網址不符合格式，會跳出可愛的錯誤訊息。
+            </p>
+            <p>
+              在圖片上按一下可以放大該圖片，並且在大圖底下會有返回與刪除鈕。
+            </p>
+            <a href="https://koten0224.github.io/album/">網頁連結</a>
+            <a href="https://github.com/koten0224/album">Github</a>
+          </div>
+        </div>
+
+        <div class="row p-5">
+          <h5 class="col-12">Git job找工作網站</h5>
+          <div class="col-12 col-lg-7">
+            <img class="w-100" src="./img/gitjob-preview.png" alt="" />
+          </div>
+          <div class="col-12 col-lg-5">
+            <p>
+              此為Javascript串接Git job
+              API來取得職缺資料的網站。使用到Axios來接收JSON資料。
+            </p>
+            <p>
+              初次載入網頁時即會顯示全部職缺，左側（手機版頂端）description欄位可輸入欲搜尋條件，比如想找Ruby職缺就輸入Ruby，想要找同時會前者跟Python的職缺的話就空白間隔輸入Python。
+            </p>
+            <p>
+              Location欄位可輸入想工作的地點，full time
+              only則是僅顯示全職工作。按下search後靜待片刻職缺即會顯示在右方（手機版下方）。一次僅顯示50筆，捲到最下方可按next
+              page以顯示更多資料。
+            </p>
+            <a href="https://koten0224.github.io/js_workshop_job/">網頁連結</a>
+            <a href="https://github.com/koten0224/js_workshop_job">Github</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
