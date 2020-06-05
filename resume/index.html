@@ -28,6 +28,9 @@
         text-align: center;
         margin-bottom: 2rem;
       }
+      .contact p{
+        margin: 0
+      }
 
       @media screen and (min-width: 960px) {
         .album .row:nth-child(odd) {
@@ -41,8 +44,13 @@
   </head>
   <body>
     <div class="container">
-      <div class="row w-75 mx-auto mt-5">
+      <div class="row w-75 mx-auto mt-5 justify-content-between">
         <h2>廖哲偉</h2>
+        <div class="contact">
+          <p>應徵職位：全端/後端/資料工程師</p>
+          <p>Email：koten0224@gmail.com</p>
+          <p>Tel：095583193</p>
+        </div>
       </div>
 
       <div class="row justify-content-around align-items-center mt-3">
@@ -54,27 +62,8 @@
       <div class="row justify-content-around align-items-center">
         <p class="col-10 col-lg-8">
           起初因為年少時的憧憬加上工作上的啟發，開始對程式設計感興趣，於是自學了一年的Python，期間自己嘗試了一些簡單的程式以及圖表與爬蟲，更解了將近四百題的Leetcode，對於演算法、爬蟲與多線程有基本的理解。但由於知曉到市場對網頁前後端的需求量是相對更高的，所以開始學習前後端網頁框架技術，包括Ruby
-          On Rails與Javascript等等，為市場需求做準備。
+          on Rails與Javascript等等，為市場需求做準備。
         </p>
-      </div>
-
-      <div class="row justify-content-around align-items-center mt-3">
-        <div class="border-top w-25"></div>
-        <h3>
-          學經歷
-        </h3>
-        <div class="border-top w-25"></div>
-      </div>
-
-      <div class="row justify-content-center align-items-center">
-        <div class="col-lg-9">
-          <ul>
-            <li>台灣師範大學工業教育系畢業</li>
-            <li>曾任英華威能源有限公司規劃部助理 1.5Y</li>
-            <li>曾任加耐力油封有限公司研發部工程師 1.5Y</li>
-            <li>曾任中華電信環南市場改建案繪圖工程師 3Y</li>
-          </ul>
-        </div>
       </div>
 
       <div class="row justify-content-around align-items-center mt-3">
@@ -86,38 +75,35 @@
       </div>
 
       <div class="row justify-content-center pt-3">
-        <div class="col-10 col-lg-3 d-flex flex-column align-items-center">
-          Programming Language
-          <span class="border w-50 mb-2"></span>
-          <div class="col-7 col-lg-10">
-            <li>Ruby</li>
-            <li>Python</li>
-            <li>Javascript</li>
-          </div>
-        </div>
 
-        <div class="col-10 col-lg-3 mt-3 mt-lg-0 d-flex flex-column align-items-center">
+        <div class="col-10 col-lg-5 mt-3 mt-lg-0 d-flex flex-column align-items-center">
           Front-end
           <span class="border w-50 mb-2"></span>
-          <div class="col-7 col-lg-10">
-            <li>Html/css</li>
-            <li>jQuery</li>
+          <div class="col-7 col-lg-10 pl-5 ml-5">
+            <h5>HTML/Css/Sass</h5>
             <li>Bootstrap</li>
+            <h5>Javascript</h5>
+            <li>jQuery</li>
             <li>Axios</li>
+            <li>StimulusJS</li>
+            <li>SortableJS</li>
           </div>
         </div>
 
-        <div class="col-10 col-lg-3 mt-3 mt-lg-0 d-flex flex-column align-items-center">
+        <div class="col-10 col-lg-5 mt-3 mt-lg-0 d-flex flex-column align-items-center">
           Back-end
           <span class="border w-50 mb-2"></span>
-          <div class="col-7 col-lg-10">
-            <li>Rails</li>
-            <li>MySQL</li>
-            <li>Beautifulsoup</li>
+          <div class="col-7 col-lg-10 pl-5 ml-5">
+            <h5>Ruby on Rails</h5>
             <li>Nokogiri</li>
+            <li>Devise</li>
+            <h5>Python</h5>
+            <li>Beautifulsoup</li>
             <li>Numpy</li>
             <li>Pandas</li>
             <li>Matplotlib</li>
+            <h5>MySQL</h5>
+            <li>熟悉基礎語法</li>
           </div>
 
           <p></p>
@@ -131,8 +117,35 @@
         </h3>
         <div class="border-top w-25"></div>
       </div>
+      
+      
 
       <div class="album col-12 col-lg-9 m-auto">
+
+        <div class="row pt-5 border-bottom">
+          <h5 class="col-12">電子報行銷平台 - Goodbytes</h5>
+
+          <div class="col-12 col-lg-7">
+            <img class="w-100" src="./img/goodbytes-preview.png" alt="" />
+          </div>
+
+          <div class="mt-3 mt-lg-0 col-12 col-lg-5">
+            <p>
+              這是在五倍紅寶石學習時實作出來的Rails專案，關鍵功能包括到了協作權限管理、拖曳式文章編輯器、網頁通用摘要爬蟲等等。
+            </p>
+            <p>
+              除了使用者間協作權限管理以及文章區段模版之規劃之外，還使用到了StimulusJS進行開關切換與發送Ajax等的程式段的管理，以及配合SortableJS實現拖拉介面，更加上儲存文章連結的功能，讓使用者在編輯電子報時可以很輕鬆的引用，並豐富自己的文章內容。
+            </p>
+            <p>
+              在編輯完成後按下送出即可輕鬆的將電子報寄至所有訂閱者的信箱中了。
+            </p>
+            <p>使用套件：Devise, Nokogiri, Carrierwave, StimulusJS, SortableJS, Bootstrap </p>
+            <a href="https://www.goodbyt.es">網頁連結</a>
+            <a href="https://github.com/DC7806/Goodbytes">Github</a>
+          </div>
+        </div>
+
+
         <div class="row pt-5 border-bottom">
           <h5 class="col-12">小型聲量分析專案</h5>
 
@@ -150,10 +163,9 @@
             <p>
               除了政治分類外，尚有其他諸如娛樂、科技等等的分類標籤可供選擇（可複選），亦會顯現出該分類底下熱衷討論的話題是什麼。
             </p>
+            <p>使用套件：BeautifulSoup, Pandas, Dash</p>
             <a href="https://kotens-nltk.herokuapp.com/">網頁連結</a>
-            <a href="https://github.com/koten0224/python_volume_analyse"
-              >Github</a
-            >
+            <a href="https://github.com/koten0224/python_volume_analyse">Github</a>
           </div>
         </div>
 
@@ -174,6 +186,7 @@
             <p>
               在圖片上按一下可以放大該圖片，並且在大圖底下會有返回與刪除鈕。
             </p>
+            <p>使用套件：jQuery, Bootstrap</p>
             <a href="https://koten0224.github.io/album/">網頁連結</a>
             <a href="https://github.com/koten0224/album">Github</a>
           </div>
@@ -197,12 +210,33 @@
               only則是僅顯示全職工作。按下search後靜待片刻職缺即會顯示在右方（手機版下方）。一次僅顯示50筆，捲到最下方可按next
               page以顯示更多資料。
             </p>
+            <p>使用套件：Axios</p>
             <a href="https://koten0224.github.io/js_workshop_job/">網頁連結</a>
             <a href="https://github.com/koten0224/js_workshop_job">Github</a>
           </div>
         </div>
       </div>
-    </div>
+
+      <div class="row justify-content-around align-items-center mt-3">
+        <div class="border-top w-25"></div>
+        <h3>
+          學經歷
+        </h3>
+        <div class="border-top w-25"></div>
+      </div>
+
+      <div class="row justify-content-center align-items-center">
+        <div class="col-lg-9">
+          <ul>
+            <li>台灣師範大學工業教育系畢業</li>
+            <li>曾任英華威能源有限公司規劃部助理 1.5Y</li>
+            <li>曾任加耐力油封有限公司研發部工程師 1.5Y</li>
+            <li>曾任中華電信環南市場改建案繪圖工程師 3Y</li>
+          </ul>
+        </div>
+      </div>
+
+    </>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
